@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/shan.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
-<body>
+<body id="shanping">
 	<div class="swiper-container">
 	    <div class="swiper-wrapper">
 	        <div class="swiper-slide">
@@ -33,5 +33,14 @@
     pagination: {
       el: '.swiper-pagination',
     },
+    on: {
+    slideChangeTransitionEnd: function(){
+      if(this.activeIndex==1){
+      	setTimeout(function(){},2000)
+      	location.href = "index.html";
+      }
+      //切换结束时，告诉我现在是第几个slide
+    },
+  },
   })        
   </script>

@@ -3,3 +3,14 @@ body{
 	height: 100vh;
 	/* background-color: black; */
 }
+#shanping .swiper-pagination-bullet{
+	width: .18rem;
+	height: .18rem;
+	border-radius: 50%;
+}
+#shanping .swiper-pagination-bullet-active{
+	width: .30rem;
+	height: .18rem;
+	border-radius: 36%;
+	background-color: rgba(255, 255, 255, .6)
+}
